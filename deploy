@@ -1,0 +1,2 @@
+#!/bin/zsh
+aws s3 cp dist s3://giftcertificates.sp90x.com --recursive --region us-east-1
