@@ -6,10 +6,14 @@ angular.module('giftcertificatesApp', [
   'ngSanitize',
   'ngRoute'
 ])
-  .config ($routeProvider) ->
+  .config ($routeProvider, $compileProvider) ->
     $routeProvider
       .when '/',
         templateUrl: 'views/main.html'
         controller: 'MainCtrl'
       .otherwise
         redirectTo: '/'
+
+    $compileProvider.aHrefSanitizationWhitelist(
+      /^\s*(https?|ftp|mailto|data):/
+    )

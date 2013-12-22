@@ -77,3 +77,84 @@ body {
     border-bottom: 0;
   }
 }
+
+.cert-form {
+  overflow: hidden;
+}
+
+.cert-preview {
+  width: 100%;
+  height: 300px;
+  border: 1px solid #ccc;
+  padding: 1em;
+  position: relative;
+  margin: 1em 0;
+
+  background-size: 100% 100%;
+
+  .cert-title {
+    font-size: 3em;
+    height: 2em;
+    margin-bottom: 0.25em;
+    overflow:hidden;
+    white-space: nowrap;
+  }
+
+  .cert-notes {
+    text-align: center;
+    font-style: italic;
+  }
+
+  &.christmas {
+    background-image: url(../images/christmas-bkg.jpg);
+
+    color: white;
+
+    .cert-title {
+      position: absolute;
+      top: 35px;
+      left: 20px;
+    }
+
+    .cert-details {
+      position: absolute;
+      top: 100px;
+      left: 200px;
+    }
+
+    .cert-notes {
+      position: absolute;
+      left: 200px;
+      width: 350px;
+      top: 165px;
+    }
+
+  }
+
+  &.basic {
+    background-image: url(../images/basic-bkg.jpg);
+
+    .cert-title {
+      position: absolute;
+      top: 35px;
+      left: 200px;
+    }
+
+    .cert-details {
+      position: absolute;
+      top: 120px;
+      left: 200px;
+    }
+
+    .cert-notes {
+      position: absolute;
+      text-align: left;
+      left: 200px;
+      width: 350px;
+      top: 215px;
+    }
+  }
+
+}
+
+
