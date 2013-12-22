@@ -6,6 +6,16 @@ angular.module('giftcertificatesApp')
     title: 'Gift Certificate'
     email: 'bradyisom@gmail.com'
 
+  $scope.templates = [
+    name: 'Basic'
+    class: 'basic'
+  ,
+    name: 'Christmas'
+    class: 'christmas'
+  ]
+
+  $scope.template = $scope.templates[0]
+
   $scope.formChanged = ->
     $scope.image = null
     $scope.emailLink = null
